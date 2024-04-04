@@ -10,12 +10,15 @@ namespace Lista1ex2
     {
         static void Main(string[] args)
         {
-            Console.Write("Digite o valor da aresta do quadrado: ");
-            int aresta = Convert.ToInt32(Console.ReadLine());
-
+            Console.WriteLine("Digite o valor da aresta do quadrado:");
+            
+            int aresta = int.Parse(Console.ReadLine());
             int area = aresta * aresta;
 
             Console.WriteLine("A área do quadrado com aresta " + aresta + " é: " + area);
+
+            Console.WriteLine("Pressione qualquer tecla para sair...");
+            Console.ReadKey();
         }
     }
 }
