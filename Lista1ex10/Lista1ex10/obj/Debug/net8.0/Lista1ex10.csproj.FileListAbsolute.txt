@@ -1,0 +1,14 @@
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\bin\Debug\net8.0\Lista1ex10.exe
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\bin\Debug\net8.0\Lista1ex10.deps.json
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\bin\Debug\net8.0\Lista1ex10.runtimeconfig.json
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\bin\Debug\net8.0\Lista1ex10.dll
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\bin\Debug\net8.0\Lista1ex10.pdb
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\obj\Debug\net8.0\Lista1ex10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\obj\Debug\net8.0\Lista1ex10.AssemblyInfoInputs.cache
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\obj\Debug\net8.0\Lista1ex10.AssemblyInfo.cs
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\obj\Debug\net8.0\Lista1ex10.csproj.CoreCompileInputs.cache
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\obj\Debug\net8.0\Lista1ex10.dll
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\obj\Debug\net8.0\refint\Lista1ex10.dll
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\obj\Debug\net8.0\Lista1ex10.pdb
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\obj\Debug\net8.0\Lista1ex10.genruntimeconfig.cache
+C:\Users\geova\source\repos\Lista1ex10\Lista1ex10\obj\Debug\net8.0\ref\Lista1ex10.dll
