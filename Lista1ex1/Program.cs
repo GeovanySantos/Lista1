@@ -1,29 +1,73 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
+using System.Windows.Forms;
 
-namespace Lista1ex1
+namespace projLeds
 {
-    internal class Program
+    public partial class Form1 : Form
     {
-        static void Main(string[] args)
+        private byte semaforo1;
+        private byte semaforo2;
+
+        public Form1()
         {
-            int b;
-            int a;
-            int area;
+            InitializeComponent();
+            semaforo1 = 0b00000000; // Inicialmente desligado
+            semaforo2 = 0b00000000;
+            AtualizarInterface();
+        }
 
-            Console.Write("Digite a base do retângulo: ");
-            b = int.Parse(Console.ReadLine());
+        // Métodos para Semáforo 1
+        private void btnSemaforo1Verde_Click(object sender, EventArgs e)
+        {
+            semaforo1 = 0b00000001; // Bit 0 para Verde
+            AtualizarInterface();
+        }
 
-            Console.Write("Digite a altura do retângulo: ");
-            a = int.Parse(Console.ReadLine());  
+        private void btnSemaforo1Amarelo_Click(object sender, EventArgs e)
+        {
+            semaforo1 = 0b00000010; // Bit 1 para Amarelo
+            AtualizarInterface();
+        }
 
-            area = b * a;
+        private void btnSemaforo1Vermelho_Click(object sender, EventArgs e)
+        {
+            semaforo1 = 0b00000100; // Bit 2 para Vermelho
+            AtualizarInterface();
+        }
 
-            Console.Write("A área do retângulo é: ");
-            Console.WriteLine(area);
+        // Métodos para Semáforo 2
+        private void btnSemaforo2Verde_Click(object sender, EventArgs e)
+        {
+            semaforo2 = 0b00000001; // Bit 0 para Verde
+            AtualizarInterface();
+        }
+
+        private void btnSemaforo2Amarelo_Click(object sender, EventArgs e)
+        {
+            semaforo2 = 0b00000010; // Bit 1 para Amarelo
+            AtualizarInterface();
+        }
+
+        private void btnSemaforo2Vermelho_Click(object sender, EventArgs e)
+        {
+            semaforo2 = 0b00000100; // Bit 2 para Vermelho
+            AtualizarInterface();
+        }
+
+        private void AtualizarInterface()
+        {
+            // Atualizar a interface gráfica com os valores dos bits
+            lblSemaforo1Bits.Text = Convert.ToString(semaforo1, 2).PadLeft(8, '0');
+            lblSemaforo2Bits.Text = Convert.ToString(semaforo2, 2).PadLeft(8, '0');
+
+            // Exemplo de controle visual (reset)
+            pbSemaforo1Verde.BackColor = (semaforo1 & 0b00000001) != 0 ? Color.Green : SystemColors.Control;
+            pbSemaforo1Amarelo.BackColor = (semaforo1 & 0b00000010) != 0 ? Color.Yellow : SystemColors.Control;
+            pbSemaforo1Vermelho.BackColor = (semaforo1 & 0b00000100) != 0 ? Color.Red : SystemColors.Control;
+
+            pbSemaforo2Verde.BackColor = (semaforo2 & 0b00000001) != 0 ? Color.Green : SystemColors.Control;
+            pbSemaforo2Amarelo.BackColor = (semaforo2 & 0b00000010) != 0 ? Color.Yellow : SystemColors.Control;
+            pbSemaforo2Vermelho.BackColor = (semaforo2 & 0b00000100) != 0 ? Color.Red : SystemColors.Control;
         }
     }
 }
